@@ -18,19 +18,11 @@ import java.util.List;
 @RestController
 public class UserHelloController {
     @Autowired
-    DiscoveryClient discoveryClient;
-    @Autowired
     RestTemplate restTemplate;
 
     @GetMapping("/usehello")
     public String useHello(){
-        String url = "http://provider/hello";
-        List<ServiceInstance> list = discoveryClient.getInstances("provider");
-        ServiceInstance instance = list.get(0);
-        String host = instance.getHost();
-        int port = instance.getPort();
-        String url1 = "http://"+host+":"+port+"/hello";
-        System.out.println(url1);
+        String url = "http://provider/provider/hello";
         String result = restTemplate.getForObject(url,String.class);
         return result;
     }

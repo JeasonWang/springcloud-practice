@@ -1,7 +1,6 @@
 package com.jeason.openfeign.controller;
 
-import com.jeason.providerclient.ProviderClient;
-import io.swagger.annotations.Api;
+import com.jeason.providerclient.client.ProviderClient;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
