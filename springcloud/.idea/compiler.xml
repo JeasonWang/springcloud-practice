@@ -11,6 +11,7 @@
         <module name="eureka" />
         <module name="providerclient" />
         <module name="hystrix" />
+        <module name="security" />
         <module name="openfeign" />
         <module name="consumer" />
         <module name="oauth2" />
@@ -25,6 +26,7 @@
       <module name="openfeign" target="1.8" />
       <module name="provider" target="1.8" />
       <module name="providerclient" target="1.8" />
+      <module name="security" target="1.8" />
       <module name="springcloud" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -38,6 +40,7 @@
       <module name="openfeign" options="-parameters" />
       <module name="provider" options="-parameters" />
       <module name="providerclient" options="-parameters" />
+      <module name="security" options="-parameters" />
       <module name="springcloud" options="-parameters" />
     </option>
   </component>
