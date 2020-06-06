@@ -23,6 +23,7 @@
         <module>hystrix</module>
         <module>oauth2</module>
         <module>security</module>
+        <module>common</module>
     </modules>
 
     <properties>

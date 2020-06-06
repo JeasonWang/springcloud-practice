@@ -1,11 +1,12 @@
 package com.jeason.provider;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/provider")
 public class HelloController {
 
     @Value("${server.port}")
@@ -13,5 +14,10 @@ public class HelloController {
     @GetMapping("/hello")
     public String hello(){
         return "hello provider:"+port;
+    }
+
+    @GetMapping("/getprovider")
+    public String getProvider(){
+        return "get provider:"+port;
     }
 }
