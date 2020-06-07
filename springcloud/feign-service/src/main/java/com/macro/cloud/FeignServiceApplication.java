@@ -1,17 +1,17 @@
-package com.jeason.openfeign;
+package com.macro.cloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
-@SpringBootApplication
-@EnableFeignClients(basePackages = {"com.jeason.providerclient"})
+@EnableFeignClients
 @EnableDiscoveryClient
-public class OpenfeignApplication {
+@SpringBootApplication
+public class FeignServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(OpenfeignApplication.class, args);
+        SpringApplication.run(FeignServiceApplication.class, args);
     }
 
 }

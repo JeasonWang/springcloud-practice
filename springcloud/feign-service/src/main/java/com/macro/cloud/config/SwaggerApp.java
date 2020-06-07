@@ -1,4 +1,4 @@
-package com.jeason.openfeign.config;
+package com.macro.cloud.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,14 +18,14 @@ public class SwaggerApp {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.jeason.openfeign.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.macro.cloud.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("Spring Boot 使用 Swagger2 构建RESTful API")
-                .version("1.0")
+                .version("v1.0")
                 .description("API 描述")
                 .build();
     }
