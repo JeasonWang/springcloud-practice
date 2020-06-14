@@ -9,27 +9,34 @@
         <module name="gateway" />
         <module name="common" />
         <module name="provider" />
-        <module name="eureka" />
+        <module name="oauth2-jwt-server" />
         <module name="providerclient" />
-        <module name="hystrix" />
-        <module name="security" />
-        <module name="openfeign" />
+        <module name="eureka" />
+        <module name="oauth2-server" />
+        <module name="feign-service" />
+        <module name="user-service" />
+        <module name="oauth2-client" />
         <module name="consumer" />
-        <module name="oauth2" />
+        <module name="security" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="common" target="1.8" />
       <module name="consumer" target="1.8" />
       <module name="eureka" target="1.8" />
+      <module name="feign-service" target="1.8" />
       <module name="gateway" target="1.8" />
       <module name="hystrix" target="1.8" />
       <module name="oauth2" target="1.8" />
+      <module name="oauth2-client" target="1.8" />
+      <module name="oauth2-jwt-server" target="1.8" />
+      <module name="oauth2-server" target="1.8" />
       <module name="openfeign" target="1.8" />
       <module name="provider" target="1.8" />
       <module name="providerclient" target="1.8" />
       <module name="security" target="1.8" />
       <module name="springcloud" target="1.8" />
+      <module name="user-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -37,14 +44,19 @@
       <module name="common" options="-parameters" />
       <module name="consumer" options="-parameters" />
       <module name="eureka" options="-parameters" />
+      <module name="feign-service" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="hystrix" options="-parameters" />
       <module name="oauth2" options="-parameters" />
+      <module name="oauth2-client" options="-parameters" />
+      <module name="oauth2-jwt-server" options="-parameters" />
+      <module name="oauth2-server" options="-parameters" />
       <module name="openfeign" options="-parameters" />
       <module name="provider" options="-parameters" />
       <module name="providerclient" options="-parameters" />
       <module name="security" options="-parameters" />
       <module name="springcloud" options="-parameters" />
+      <module name="user-service" options="-parameters" />
     </option>
   </component>
 </project>

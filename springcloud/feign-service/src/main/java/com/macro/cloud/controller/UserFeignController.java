@@ -3,6 +3,7 @@ package com.macro.cloud.controller;
 import com.macro.cloud.service.UserService;
 import com.macro.cloud.domain.CommonResult;
 import com.macro.cloud.domain.User;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiOperation;
@@ -13,7 +14,6 @@ import org.springframework.web.bind.annotation.*;
  * Created by jeason on 2019/8/29.
  */
 @RestController
-@ApiModel(description = "UserFeignController!")
 @RequestMapping("/user")
 public class UserFeignController {
     @Autowired

@@ -17,13 +17,14 @@
         <module>providerclient</module>
         <module>eureka</module>
         <module>consumer</module>
-        <module>openfeign</module>
         <module>provider</module>
         <module>gateway</module>
-        <module>hystrix</module>
-        <module>oauth2</module>
+        <module>oauth2-server</module>
         <module>security</module>
-        <module>common</module>
+        <module>feign-service</module>
+        <module>user-service</module>
+        <module>oauth2-jwt-server</module>
+        <module>oauth2-client</module>
     </modules>
 
     <properties>
