@@ -1,4 +1,4 @@
-package com.macro.cloud.config;
+package com.jeason.consumer.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,7 +18,7 @@ public class SwaggerApp {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.macro.cloud.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.jeason.consumer.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }

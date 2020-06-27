@@ -6,4 +6,10 @@ server:
   port: 1115
 spring:
   application:
-    name: consumeer
+    name: consumer-service
+feign:
+  hystrix:
+    enabled: true #在Feign中开启Hystrix
+logging:
+  level:
+    com.jeason.providerclient.client.ProviderClient: debug

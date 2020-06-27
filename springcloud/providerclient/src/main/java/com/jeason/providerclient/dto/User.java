@@ -1,28 +1,21 @@
-package com.jeason.provider.mbg.model;
+package com.jeason.providerclient.dto;
 
-import io.swagger.annotations.ApiModelProperty;
+
 import java.io.Serializable;
 
 public class User implements Serializable {
-    @ApiModelProperty(value = "user id")
     private Integer id;
 
-    @ApiModelProperty(value = "user name")
     private String name;
 
-    @ApiModelProperty(value = "user password")
     private String password;
 
-    @ApiModelProperty(value = "user telephone")
     private String telephone;
 
-    @ApiModelProperty(value = "user address")
     private String address;
 
-    @ApiModelProperty(value = "user email")
     private String email;
 
-    @ApiModelProperty(value = "user sex")
     private String sex;
 
     private static final long serialVersionUID = 1L;

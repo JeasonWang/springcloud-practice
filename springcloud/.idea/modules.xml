@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/consumer/consumer.iml" filepath="$PROJECT_DIR$/consumer/consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka/eureka.iml" filepath="$PROJECT_DIR$/eureka/eureka.iml" />
-      <module fileurl="file://$PROJECT_DIR$/feign-service/feign-service.iml" filepath="$PROJECT_DIR$/feign-service/feign-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/oauth2-client/oauth2-client.iml" filepath="$PROJECT_DIR$/oauth2-client/oauth2-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/oauth2-jwt-server/oauth2-jwt-server.iml" filepath="$PROJECT_DIR$/oauth2-jwt-server/oauth2-jwt-server.iml" />
