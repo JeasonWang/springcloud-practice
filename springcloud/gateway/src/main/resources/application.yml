@@ -14,4 +14,4 @@ eureka:
       defaultZone: http://localhost:8001/eureka
 logging:
   level:
-    org.springframework.cloud.gageway: debug
+    com.jeason.gateway: debug

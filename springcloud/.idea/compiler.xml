@@ -2,19 +2,20 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="security" />
-        <module name="eureka" />
         <module name="gateway" />
-        <module name="user-service" />
-        <module name="oauth2-server" />
-        <module name="oauth2-jwt-server" />
-        <module name="oauth2-client" />
         <module name="provider" />
+        <module name="security" />
+        <module name="oauth2-jwt-server" />
         <module name="providerclient" />
+        <module name="eureka" />
+        <module name="oauth2-server" />
+        <module name="user-service" />
+        <module name="oauth2-client" />
         <module name="consumer" />
       </profile>
     </annotationProcessing>

@@ -1,11 +1,11 @@
 package com.jeason.provider.service;
 
-import com.jeason.provider.common.CommonResult;
-import com.jeason.provider.config.RedisService;
+import com.jeason.provider.common.domain.CommonResult;
+import com.jeason.provider.common.service.RedisService;
+import com.jeason.provider.mapper.MyUserMapper;
 import com.jeason.provider.mbg.mapper.UserMapper;
 import com.jeason.provider.mbg.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
@@ -21,8 +21,13 @@ import java.util.Random;
 public class UserService {
     @Autowired
     UserMapper userMapper;
+
+    @Autowired
+    MyUserMapper myUserMapper;
+
     @Autowired
     private RedisService redisService;
+
     private final String REDIS_KEY_PREFIX_AUTH_CODE = "portal:authCode:";
     private final Long AUTH_CODE_EXPIRE_SECONDS = 120L;
 
@@ -32,6 +37,10 @@ public class UserService {
 
     public User getUser(Integer id){
         return userMapper.selectByPrimaryKey(id);
+    }
+
+    public User getUserByName(String name){
+        return myUserMapper.getUserByName(name);
     }
 
     public CommonResult<String> createUser(User user){

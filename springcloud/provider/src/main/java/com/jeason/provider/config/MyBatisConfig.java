@@ -9,6 +9,6 @@ import org.springframework.context.annotation.Configuration;
  * @Date: 2020/6/27 16:40
  */
 @Configuration
-@MapperScan(basePackages = "com.jeason.provider.mbg.mapper")
+@MapperScan(basePackages = {"com.jeason.provider.mbg.mapper","com.jeason.provider.mapper"})
 public class MyBatisConfig {
 }

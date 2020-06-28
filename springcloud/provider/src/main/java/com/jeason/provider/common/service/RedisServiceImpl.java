@@ -1,4 +1,4 @@
-package com.jeason.provider.config;
+package com.jeason.provider.common.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;

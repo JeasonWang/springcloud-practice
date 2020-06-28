@@ -14,9 +14,4 @@ public class GatewayApplication {
         SpringApplication.run(GatewayApplication.class, args);
     }
 
-//    @Bean
-//    RouteLocator routeLocator(RouteLocatorBuilder routeLocatorBuilder){
-//        return routeLocatorBuilder.routes().route("jeason_route",r -> r.path("/get").uri("http://httpbin.org"))
-//                .build();
-//    }
 }

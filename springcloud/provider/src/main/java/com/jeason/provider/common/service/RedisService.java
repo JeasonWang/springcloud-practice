@@ -1,4 +1,4 @@
-package com.jeason.provider.config;
+package com.jeason.provider.common.service;
 
 /**
  * redis操作Service,

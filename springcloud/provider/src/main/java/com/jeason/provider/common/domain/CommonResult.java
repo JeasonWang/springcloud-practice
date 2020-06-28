@@ -1,4 +1,4 @@
-package com.jeason.provider.common;
+package com.jeason.provider.common.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

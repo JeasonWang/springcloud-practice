@@ -1,11 +1,10 @@
 package com.jeason.provider.controller;
 
-import com.jeason.provider.common.CommonResult;
+import com.jeason.provider.common.domain.CommonResult;
 import com.jeason.provider.mbg.model.User;
 import com.jeason.provider.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiParam;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -55,6 +54,18 @@ public class UserController {
     @ApiOperation(value = "deleteUser", notes = "删除用户")
     public CommonResult<String> deleteUser(@PathVariable("id") Integer id){
         return userService.deleteUser(id);
+    }
+
+    @GetMapping("/login")
+    @ApiOperation("login")
+    public String login(@RequestParam("login") String login){
+        return login;
+    }
+
+    @GetMapping("/register")
+    @ApiOperation("register")
+    public String register(@RequestParam("register") String register){
+        return register;
     }
 
     @GetMapping("/test")
